@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Access Logs
-Plugin URI: http://www.satollo.com/wordpress/access-logs
-Description: Create access log in the Apache combine format. The logs are store in wp-content/logs.
+Plugin URI: http://www.satollo.com/english/wordpress/access-logs
+Description: Access Logs generate a access log file in Apache combined format rotated monthly.
 Version: 1.0
 Author: Satollo
 Author URI: http://www.satollo.com
@@ -36,6 +36,7 @@ function aal_init()
 	global $aal_options;
 	$href = $_SERVER['REQUEST_URI'];
     if (strpos($href, 'wp-admin') !== false) return;
+    if (strpos($href, 'wp-includes') !== false) return;
     
 	$referer = $_SERVER['HTTP_REFERER'];
 	$host = $_SERVER['REMOTE_ADDR'];
