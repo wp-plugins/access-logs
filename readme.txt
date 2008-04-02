@@ -14,9 +14,7 @@ Access Logs generate an access log file (rotated monthly) with access data in th
 folder wp-content/logs. Those files can be processed with common logs analyzers, like
 Webalizer.
 
-You have to protect the folder with an .htaccess file, otherwise anyone can download you logs.
-
-The logs can grow very quickly, pay attention to your disk space.
+More on: http://www.satollo.com/english/wordpress/access-logs
 
 == Installation ==
 
